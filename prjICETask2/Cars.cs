@@ -25,15 +25,17 @@ namespace prjICETask2
         {
             get
             {
-                return index switch
-                {
-                    0 => carBrand,
-                    1 => carModel,
-                    2 => carColor,
-                    3 => carYear,
-                    4 => carPrice,
-                    _ => null
-                };
+                if (index == 0)
+                    return carBrand;
+                else if (index == 1)
+                    return carModel;
+                else if (index == 2)
+                    return carColor;
+                else if (index == 3)
+                    return carYear;
+                else if (index == 4)
+                    return carPrice;
+                return null;
             }
             set
             {
@@ -62,19 +64,21 @@ namespace prjICETask2
         {
             get
             {
-                return attrName switch
-                {
-                    "carBrand" => carBrand,
-                    "carModel" => carModel,
-                    "carColor" => carColor,
-                    "carYear" => carYear,
-                    "carPrice" => carPrice,
-                    _ => null
-                };
+                if (attrName == "carBrand")
+                    return carBrand;
+                else if (attrName == "carModel")
+                    return carModel;
+                else if (attrName == "carColor")
+                    return carColor;
+                else if (attrName == "carYear")
+                    return carYear;
+                else if (attrName == "carPrice")
+                    return carPrice;
+                return null;
             }
             set
             {
-                switch (attrName)
+                switch (attrName.ToLower())
                 {
                     case "carBrand":
                         carBrand = (string)value;
