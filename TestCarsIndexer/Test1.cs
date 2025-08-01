@@ -30,7 +30,7 @@ namespace TestCarsIndexer
         public void TestUpdateCarYear()
         {
             Cars car = new Cars("Toyota", "Corolla", "Red", 2020, 20000.0);
-            car[3] = 2021;
+            car["carYear"] = 2021;
             Assert.AreEqual(2021, car[3]);
         }
 

@@ -20,29 +20,29 @@
             get
             {
                 if (index == 0)
-                    return carBrand;
+                    return this.carBrand;
                 else if (index == 1)
-                    return carModel;
+                    return this.carModel;
                 else if (index == 2)
-                    return carColor;
+                    return this.carColor;
                 else if (index == 3)
-                    return carYear;
+                    return this.carYear;
                 else if (index == 4)
-                    return carPrice;
+                    return this.carPrice;
                 return null;
             }
             set
             {
                 if (index == 0)
-                    carBrand = (string)value;
+                    this.carBrand = (string)value;
                 else if (index == 1)
-                    carModel = (string)value;
+                    this.carModel = (string)value;
                 else if (index == 2)
-                    carColor = (string)value;
+                    this.carColor = (string)value;
                 else if (index == 3)
-                    carYear = (int)value;
+                    this.carYear = (int)value;
                 else if (index == 4)
-                    carPrice = (double)value;
+                    this.carPrice = (double)value;
             }
         }
 
@@ -51,29 +51,29 @@
             get
             {
                 if (attrName == "carBrand")
-                    return carBrand;
+                    return this.carBrand;
                 else if (attrName == "carModel")
-                    return carModel;
+                    return this.carModel;
                 else if (attrName == "carColor")
-                    return carColor;
+                    return this.carColor;
                 else if (attrName == "carYear")
-                    return carYear;
+                    return this.carYear;
                 else if (attrName == "carPrice")
                     return carPrice;
                 return null;
             }
             set
             {
-                if (attrName.ToLower().Equals("carBrand"))
-                    carBrand = (string)value;
-                else if (attrName.ToLower().Equals("carModel"))
-                    carModel = (string)value;
-                else if (attrName.ToLower().Equals("carColor"))
-                    carColor = (string)value;
-                else if (attrName.ToLower().Equals("carYear"))
-                    carYear = (int)value;
-                else if (attrName.ToLower().Equals("carPrice"))
-                    carPrice = (double)value;
+                if (attrName.ToLower().Equals("carbrand"))
+                    this.carBrand = (string)value;
+                else if (attrName.ToLower().Equals("carmodel"))
+                    this.carModel = (string)value;
+                else if (attrName.ToLower().Equals("carcolor"))
+                    this.carColor = (string)value;
+                else if (attrName.ToLower().Equals("caryear"))
+                    this.carYear = (int)value;
+                else if (attrName.ToLower().Equals("carprice"))
+                    this.carPrice = (double)value;
             }
         }
     }
